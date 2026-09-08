@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRIS 2.0 | Next-Gen Industrial NDT & Certification Academy | BHEL Approved</title>
+    <meta name="description" content="IRIS - Integrity Reliability Inspection Service. Next-generation NDT testing, BHEL-approved Third Party Inspection (TPI), Welder Qualification (WQT), and ASNT certification in Trichy.">
+    
+    <!-- Design Variant 2 Stylesheet -->
+    <link rel="stylesheet" href="css/style2.css">
+    
+    <!-- GSAP & ScrollTrigger Core Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+    <!-- GSAP Custom Interactive Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Navigation Header -->
+    <header class="navbar-hud">
+        <div class="container nav-wrap">
+            <a href="index2.html" class="brand-hud">
+                <div class="brand-badge-glitch">IR</div>
+                <div class="brand-name-group">
+                    <span class="brand-title">IRIS<span>//</span></span>
+                    <span class="brand-desc">Integrity Reliability Inspection Service</span>
+                </div>
+            </a>
+
+            <ul class="nav-links-hud">
+                <li><a href="#hero">Overview</a></li>
+                <li><a href="#services">Inspection Matrix</a></li>
+                <li><a href="#academy">Academy</a></li>
+                <li><a href="#clients">Partners</a></li>
+                <li><a href="#rfq">RFQ Terminal</a></li>
+            </ul>
+
+            <div style="display: flex; align-items: center; gap: 12px;">
+                <div style="display: flex; gap: 6px;">
+                    <a href="index.html" class="btn-hud btn-hud-cyan" style="padding: 6px 12px; font-size: 0.75rem;">Dark</a>
+                    <a href="index2.html" class="btn-hud btn-hud-cyan" style="padding: 6px 12px; font-size: 0.75rem; border-color: var(--primary); color: var(--primary);">Cyber</a>
+                    <a href="index3.html" class="btn-hud btn-hud-cyan" style="padding: 6px 12px; font-size: 0.75rem;">Light</a>
+                </div>
+                <a href="#rfq" class="btn-hud btn-hud-primary" style="padding: 10px 20px;">
+                    <span>Connect Live</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-hud" id="hero">
+            <div class="container">
+                <div class="hero-hud-grid">
+                    <div>
+                        <div class="hero-accreditations">
+                            <span class="acc-chip verified">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                                </svg>
+                                Approved by BHEL
+                            </span>
+                            <span class="acc-chip">
+                                ISO 9001:2015 Standard
+                            </span>
+                            <span class="acc-chip" style="color: var(--cyan); border-color: var(--border-active);">
+                                ASNT SNT-TC-1A
+                            </span>
+                        </div>
+
+                        <h1 class="hero-display-title">
+                            Next-Gen <span class="text-gradient-cyan">Precision NDT</span> & Industrial Quality.
+                        </h1>
+
+                        <p class="hero-description">
+                            Engineered for zero-failure performance. IRIS provides mission-critical Non-Destructive Testing, Third-Party Inspection, and ASNT Level I/II/III certification training backed by state-of-the-art laboratory testing facilities in Trichy.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#services" class="btn-hud btn-hud-primary">
+                                <span>Inspection Capabilities</span>
+                            </a>
+                            <a href="#academy" class="btn-hud btn-hud-cyan">
+                                <span>Training Syllabus</span>
+                            </a>
+                        </div>
+
+                        <!-- Mini Spec Line -->
+                        <div style="display: flex; gap: 24px; padding-top: 20px; border-top: 1px solid var(--border-subtle);">
+                            <div>
+                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan); display: block;">FACILITY LOCATION</span>
+                                <span style="font-size: 0.875rem; color: #CBD5E1;">Thiruverumbur, Trichy - 620013</span>
+                            </div>
+                            <div>
+                                <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary); display: block;">HOTLINE / WHATSAPP</span>
+                                <a href="https://wa.me/919944674608" target="_blank" style="font-size: 0.875rem; color: #CBD5E1; text-decoration: none;">+91 99446 74608</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3D Holographic Visual Card -->
+                    <div class="hud-visual-card">
+                        <div class="hud-screen-inner">
+                            <div class="laser-scan-line"></div>
+                            <img src="assets/images/hero-ndt.jpg" alt="NDT High-Precision Inspection">
+                            <div class="hud-overlay-grid"></div>
+
+                            <div class="hud-data-panel">
+                                <div>
+                                    <div class="hud-live-indicator">
+                                        <span class="pulse-node"></span>
+                                        <span>ACTIVE TELEMETRY</span>
+                                    </div>
+                                    <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: #FFFFFF; display: block; margin-top: 4px;">
+                                        ULTRASONIC FLAW SIZING (UT)
+                                    </span>
+                                </div>
+                                <div style="text-align: right;">
+                                    <span style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--cyan); display: block;">TEST RESOLUTION</span>
+                                    <span style="font-family: var(--font-mono); font-size: 0.875rem; color: var(--primary); font-weight: 700;">0.01 mm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Metric HUD Ticker -->
+        <section class="metrics-hud">
+            <div class="container">
+                <div class="metrics-hud-grid">
+                    <div class="metric-hud-box">
+                        <div class="metric-val-wrap">
+                            <span class="metric-number" data-target="45">0</span>
+                            <span class="metric-suffix">+</span>
+                        </div>
+                        <span class="metric-caption">Years Collective Industry Leadership</span>
+                    </div>
+
+                    <div class="metric-hud-box">
+                        <div class="metric-val-wrap">
+                            <span class="metric-number" data-target="8500">0</span>
+                            <span class="metric-suffix">+</span>
+                        </div>
+                        <span class="metric-caption">Industrial Assets Tested & Validated</span>
+                    </div>
+
+                    <div class="metric-hud-box">
+                        <div class="metric-val-wrap">
+                            <span class="metric-number" data-target="2500">0</span>
+                            <span class="metric-suffix">+</span>
+                        </div>
+                        <span class="metric-caption">Certified NDT Level II/III Alumni</span>
+                    </div>
+
+                    <div class="metric-hud-box">
+                        <div class="metric-val-wrap">
+                            <span class="metric-number" data-target="100">0</span>
+                            <span class="metric-suffix">%</span>
+                        </div>
+                        <span class="metric-caption">Compliance with ASME, API & BHEL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inspection Services Matrix -->
+        <section class="section-services-hud" id="services">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span class="hud-tag">Core Capabilities</span>
+                    <h2 class="section-heading">Industrial Inspection Matrix</h2>
+                    <p class="section-subheading" style="margin: 0 auto 60px;">
+                        Certified non-destructive testing and third-party inspection services that safeguard critical industrial infrastructure.
+                    </p>
+                </div>
+
+                <div class="services-hud-grid">
+                    <!-- Service 1 -->
+                    <div class="service-hud-card">
+                        <div>
+                            <div class="service-icon-hud">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-hud">Third Party Inspection (TPI)</h3>
+                            <p class="service-desc-hud">
+                                Independent quality surveillance verifying compliance across fabrication, site erection, and turnaround cycles.
+                            </p>
+                            <ul class="service-spec-list">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Boiler & Pressure Vessels (IBR/ASME)
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Cross-Country Pipeline Quality
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Sand Blasting & Coating Inspection
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-hud btn-hud-cyan" data-hud-modal="tpi" style="width: 100%;">
+                            Scope Specifications
+                        </a>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-hud-card">
+                        <div>
+                            <div class="service-icon-hud" style="color: var(--primary); border-color: var(--border-amber); background: rgba(255,119,0,0.08);">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-hud">Welder Qualification (WQT)</h3>
+                            <p class="service-desc-hud">
+                                Systematic testing and certification of welders according to ASME Sec IX, AWS D1.1, and IBR standards.
+                            </p>
+                            <ul class="service-spec-list">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    GMAW, SAW, and GTAW (TIG/MIG)
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Thickness up to 50mm MS High Tensile
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Stainless Steel & Carbon Steel Coupons
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-hud btn-hud-primary" data-hud-modal="wqt" style="width: 100%;">
+                            Qualification Protocols
+                        </a>
+                    </div>
+
+                    <!-- Service 3 -->
+                    <div class="service-hud-card">
+                        <div>
+                            <div class="service-icon-hud">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <path d="M12 6v6l4 2"></path>
+                                </svg>
+                            </div>
+                            <h3 class="service-title-hud">Comprehensive NDT (6 Methods)</h3>
+                            <p class="service-desc-hud">
+                                Precision non-destructive evaluation for identifying cracks, porosity, inclusions, and wall thinning.
+                            </p>
+                            <ul class="service-spec-list">
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Ultrasonic Testing (UT) & Thickness
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Magnetic Particle (MPI) & Penetrant (PT)
+                                </li>
+                                <li>
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Radiography (RT) & Film Interpretation
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="btn-hud btn-hud-cyan" data-hud-modal="ndt2" style="width: 100%;">
+                            Testing Breakdown
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Academy Hub -->
+        <section class="section-academy-hud" id="academy">
+            <div class="container">
+                <div style="text-align: center;">
+                    <span class="hud-tag amber">Training Division</span>
+                    <h2 class="section-heading">IRIS Engineering Academy</h2>
+                    <p class="section-subheading" style="margin: 0 auto 40px;">
+                        Practical-first curriculum designed by industry intellects. Equipped with ASNT test blocks and real industrial defect samples.
+                    </p>
+                </div>
+
+                <div class="academy-tabs-hud">
+                    <button class="tab-btn-hud active" data-filter="all">All Modules</button>
+                    <button class="tab-btn-hud" data-filter="qa">QA/QC Engineering</button>
+                    <button class="tab-btn-hud" data-filter="ndt">NDT Level II</button>
+                    <button class="tab-btn-hud" data-filter="adv">Advanced PAUT / TOFD</button>
+                </div>
+
+                <div class="courses-hud-grid">
+                    <!-- Course 1 -->
+                    <div class="course-hud-card" data-category="qa">
+                        <div class="course-hud-header">
+                            <span class="course-hud-tag">QA/QC SPECIALIST</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan);">4 WEEKS</span>
+                        </div>
+                        <h3 class="course-hud-title">Welding & Coating QA/QC Inspection</h3>
+                        <p class="course-hud-desc">
+                            In-depth mastery of welding metallurgy, ASME Sec IX / AWS D1.1 codes, SSPC/NACE paint inspection, and final quality dossier preparation.
+                        </p>
+                        <a href="https://wa.me/919944674608?text=Hello%20IRIS,%20I%20am%20interested%20in%20the%20QA/QC%20Course." target="_blank" class="btn-hud btn-hud-primary" style="padding: 10px 20px;">
+                            Enroll via WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Course 2 -->
+                    <div class="course-hud-card" data-category="ndt">
+                        <div class="course-hud-header">
+                            <span class="course-hud-tag">ASNT SNT-TC-1A</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan);">PRACTICAL FOCUS</span>
+                        </div>
+                        <h3 class="course-hud-title">NDT Level II Certification (6 Methods)</h3>
+                        <p class="course-hud-desc">
+                            Complete training across Ultrasonic, Magnetic Particle, Liquid Penetrant, Radiography, RTFI, and Visual Testing with 80% lab practicals.
+                        </p>
+                        <a href="https://wa.me/919944674608?text=Hello%20IRIS,%20I%20am%20interested%20in%20NDT%20Level%20II%20Certification." target="_blank" class="btn-hud btn-hud-cyan" style="padding: 10px 20px;">
+                            Enroll via WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Course 3 -->
+                    <div class="course-hud-card" data-category="adv">
+                        <div class="course-hud-header">
+                            <span class="course-hud-tag" style="background: rgba(0,240,255,0.12); border-color: var(--border-active); color: var(--cyan);">ADVANCE NDT</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--primary);">ADVANCED</span>
+                        </div>
+                        <h3 class="course-hud-title">Phased Array (PAUT) & TOFD Technology</h3>
+                        <p class="course-hud-desc">
+                            Specialized digital flaw mapping, focal laws generation, sectorial scanning, and high-accuracy depth sizing for critical pressure vessels.
+                        </p>
+                        <a href="https://wa.me/919944674608?text=Hello%20IRIS,%20I%20am%20interested%20in%20PAUT/TOFD%20Advance%20NDT." target="_blank" class="btn-hud btn-hud-primary" style="padding: 10px 20px;">
+                            Enroll via WhatsApp
+                        </a>
+                    </div>
+
+                    <!-- Course 4 -->
+                    <div class="course-hud-card" data-category="ndt">
+                        <div class="course-hud-header">
+                            <span class="course-hud-tag">CONSULTANCY</span>
+                            <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--cyan);">EXECUTIVE</span>
+                        </div>
+                        <h3 class="course-hud-title">NDT Level III Preparatory Mentorship</h3>
+                        <p class="course-hud-desc">
+                            Targeted preparation for ASNT Level III exams covering Basic examination, Method exams (UT/RT/MT/PT/VT), and NDT Written Practice drafting.
+                        </p>
+                        <a href="https://wa.me/919944674608?text=Hello%20IRIS,%20I%20am%20interested%20in%20NDT%20Level%20III%20Classes." target="_blank" class="btn-hud btn-hud-cyan" style="padding: 10px 20px;">
+                            Enroll via WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Client Ticker -->
+        <div class="client-marquee-hud" id="clients">
+            <div class="marquee-strip-hud">
+                <div class="marquee-client-item"><strong>L&T</strong> (Coimbatore)</div>
+                <div class="marquee-client-item"><strong>BPCL</strong> (Thanjavur Air Force Station)</div>
+                <div class="marquee-client-item"><strong>HAL OFFSHORE Pvt Ltd</strong></div>
+                <div class="marquee-client-item"><strong>WALCHAND INDUSTRIES</strong> (TNEB)</div>
+                <div class="marquee-client-item"><strong>MRF</strong> (Pondicherry)</div>
+                <div class="marquee-client-item"><strong>PUSHPIT STEELS Pvt Ltd</strong></div>
+                <div class="marquee-client-item"><strong>SICGILSOL GASES</strong></div>
+                <div class="marquee-client-item"><strong>Chengalrayan Sugar Mills</strong></div>
+                <div class="marquee-client-item"><strong>Meclin Infras Pvt Ltd</strong></div>
+                <!-- Loop duplicates -->
+                <div class="marquee-client-item"><strong>L&T</strong> (Coimbatore)</div>
+                <div class="marquee-client-item"><strong>BPCL</strong> (Thanjavur Air Force Station)</div>
+                <div class="marquee-client-item"><strong>HAL OFFSHORE Pvt Ltd</strong></div>
+                <div class="marquee-client-item"><strong>WALCHAND INDUSTRIES</strong> (TNEB)</div>
+                <div class="marquee-client-item"><strong>MRF</strong> (Pondicherry)</div>
+            </div>
+        </div>
+
+        <!-- RFQ Terminal & Immediate Dispatch -->
+        <section class="section-rfq-hud" id="rfq">
+            <div class="container">
+                <div class="rfq-terminal-card">
+                    <div class="rfq-terminal-bar">
+                        <div class="rfq-terminal-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">
+                            TRANSMISSION PROTOCOL: DIRECT RFQ // IRIS TRICHY
+                        </span>
+                        <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--emerald);">
+                            ONLINE (24/7)
+                        </span>
+                    </div>
+
+                    <div class="rfq-terminal-body">
+                        <div>
+                            <span class="hud-tag">Direct Transmission</span>
+                            <h2 style="font-size: 2.2rem; margin-bottom: 16px;">Request Quote or Academy Admission</h2>
+                            <p style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; margin-bottom: 24px;">
+                                Send your engineering specifications or course enrollment query directly to our senior Level III inspectors via WhatsApp with one click.
+                            </p>
+
+                            <div style="display: flex; flex-direction: column; gap: 16px;">
+                                <div style="display: flex; gap: 12px; align-items: center;">
+                                    <span style="color: var(--cyan); font-family: var(--font-mono); font-size: 0.8125rem;">[PHONE]</span>
+                                    <span style="color: #FFFFFF; font-family: var(--font-mono); font-size: 0.9375rem;">+91 99446 74608</span>
+                                </div>
+                                <div style="display: flex; gap: 12px; align-items: center;">
+                                    <span style="color: var(--cyan); font-family: var(--font-mono); font-size: 0.8125rem;">[EMAIL]</span>
+                                    <span style="color: #FFFFFF; font-family: var(--font-mono); font-size: 0.9375rem;">iris.ndte@gmail.com</span>
+                                </div>
+                                <div style="display: flex; gap: 12px; align-items: center;">
+                                    <span style="color: var(--cyan); font-family: var(--font-mono); font-size: 0.8125rem;">[LAB]</span>
+                                    <span style="color: #CBD5E1; font-size: 0.875rem;">No.5/8C, Thiruvengada Nagar, Thiruverumbur, Trichy - 620013</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form id="hudRfqForm">
+                            <div class="rfq-input-group">
+                                <label class="rfq-label">Client / Engineer Name</label>
+                                <input type="text" class="rfq-input" id="rfqName" placeholder="Rajesh Kumar" required>
+                            </div>
+
+                            <div class="rfq-input-group">
+                                <label class="rfq-label">WhatsApp Number</label>
+                                <input type="tel" class="rfq-input" id="rfqPhone" placeholder="+91 99446 74608" required>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                                <div class="rfq-input-group">
+                                    <label class="rfq-label">Asset / Domain</label>
+                                    <select class="rfq-input" id="rfqAssetType">
+                                        <option>Boilers & Pressure Vessels</option>
+                                        <option>Cross-Country Pipeline</option>
+                                        <option>Welder Qualification Test</option>
+                                        <option>Student NDT Level II</option>
+                                        <option>Student QA/QC Program</option>
+                                        <option>Advance NDT (PAUT/TOFD)</option>
+                                    </select>
+                                </div>
+
+                                <div class="rfq-input-group">
+                                    <label class="rfq-label">Inspection Method</label>
+                                    <select class="rfq-input" id="rfqMethod">
+                                        <option>Third Party Inspection (TPI)</option>
+                                        <option>Ultrasonic Testing (UT)</option>
+                                        <option>Radiography Testing (RT)</option>
+                                        <option>Magnetic Particle (MPI)</option>
+                                        <option>Penetrant Testing (PT)</option>
+                                        <option>PAUT / TOFD / ECT</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="rfq-input-group">
+                                <label class="rfq-label">Specifications / Notes</label>
+                                <textarea class="rfq-input" id="rfqNotes" rows="3" placeholder="Provide material thickness, job location, schedule requirements..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn-hud btn-hud-primary" style="width: 100%;" id="rfqSubmitBtn">
+                                <span>Submit Specification & Connect</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-hud">
+        <div class="container">
+            <div class="footer-hud-grid">
+                <div>
+                    <span class="brand-title" style="font-size: 1.4rem;">IRIS<span>//</span></span>
+                    <p style="color: var(--text-muted); font-size: 0.875rem; margin-top: 14px; line-height: 1.7;">
+                        Introducing Integrity Reliability Inspection Service. Approved by BHEL & standardized with ISO 9001:2015. Trichy's trusted center for Non-Destructive Testing and certified inspection professionals.
+                    </p>
+                </div>
+
+                <div class="footer-col-hud">
+                    <h4>Inspection</h4>
+                    <ul>
+                        <li><a href="#services">Third Party Inspection (TPI)</a></li>
+                        <li><a href="#services">Welder Qualification (WQT)</a></li>
+                        <li><a href="#services">Ultrasonic Testing (UT)</a></li>
+                        <li><a href="#services">Radiography Testing (RT)</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-hud">
+                    <h4>Academy</h4>
+                    <ul>
+                        <li><a href="#academy">QA/QC Welding Inspection</a></li>
+                        <li><a href="#academy">NDT Level II (6 Methods)</a></li>
+                        <li><a href="#academy">Phased Array & TOFD</a></li>
+                        <li><a href="#academy">NDT Level III Preparatory</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col-hud">
+                    <h4>Switch View</h4>
+                    <ul>
+                        <li><a href="index.html"><strong>Variant 1:</strong> Classic Modern</a></li>
+                        <li><a href="index2.html" style="color: var(--cyan);"><strong>Variant 2:</strong> Cyber HUD (Active)</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div style="border-top: 1px solid var(--border-subtle); padding-top: 24px; display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); flex-wrap: wrap; gap: 12px;">
+                <span>&copy; 2026 IRIS Trichy. All Rights Reserved.</span>
+                <span>GSAP Animated Interface // BHEL Approved</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP Pop-up Modal Container -->
+    <div id="hudModal" style="display:none; position:fixed; inset:0; background:rgba(6,8,14,0.88); backdrop-filter:blur(10px); z-index:9999; align-items:center; justify-content:center; padding:20px;">
+        <div class="hud-modal-box" style="background:#0B101C; border:1px solid var(--cyan); border-radius:var(--radius-md); max-width:540px; width:100%; padding:32px; box-shadow:0 20px 50px rgba(0,240,255,0.2); position:relative;">
+            <button id="hudModalClose" style="position:absolute; top:20px; right:20px; background:transparent; border:none; color:var(--text-muted); cursor:pointer; font-size:1.25rem;">&times;</button>
+            <span id="hudModalBadge" class="hud-tag" style="margin-bottom:12px;"></span>
+            <h3 id="hudModalTitle" style="font-size:1.4rem; margin-bottom:18px;"></h3>
+            <ul id="hudModalList" style="list-style:none; margin-bottom:24px;"></ul>
+            <a href="https://wa.me/919944674608?text=Hello%20IRIS%20Trichy,%20I%20would%20like%20to%20consult%20regarding%20this%20technical%20scope." target="_blank" class="btn-hud btn-hud-primary" style="width:100%;">
+                Consult via WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Main GSAP Script File -->
+    <script src="js/main2.js"></script>
+</body>
+</html>
