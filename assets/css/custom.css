@@ -1,0 +1,473 @@
+/* ==========================================================================
+   IRIS MVC Application - Custom Theme Stylesheet (Index 3 Corporate Light)
+   Framework: Bootstrap 5.3 + Custom International Engineering Design Tokens
+   Fonts: Manrope (Display), Plus Jakarta Sans (Headings), Inter (Body)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap');
+
+:root {
+    --iris-blue: #0052CC;
+    --iris-blue-dark: #0747A6;
+    --iris-navy: #0A192F;
+    --iris-navy-subtle: #0F172A;
+    --iris-accent: #2563EB;
+    --iris-ice: #EFF6FF;
+    --iris-ice-border: #BFDBFE;
+    
+    --iris-emerald: #059669;
+    --iris-emerald-bg: #ECFDF5;
+    --iris-emerald-border: #A7F3D0;
+    
+    --iris-bg: #F8FAFC;
+    --iris-white: #FFFFFF;
+    --iris-border: #E2E8F0;
+    --iris-text: #334155;
+    --iris-heading: #0F172A;
+    --iris-muted: #64748B;
+
+    --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--iris-bg);
+    color: var(--iris-text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    color: var(--iris-heading);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+.font-display {
+    font-family: var(--font-display);
+}
+
+.font-mono {
+    font-family: var(--font-mono);
+}
+
+/* Institutional Badges */
+.badge-atc {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-heading);
+    font-size: 0.8125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 7px 16px;
+    border-radius: 9999px;
+    background: var(--iris-ice);
+    border: 1px solid var(--iris-ice-border);
+    color: var(--iris-blue);
+}
+
+.badge-atc.verified {
+    background: var(--iris-emerald-bg);
+    border-color: var(--iris-emerald-border);
+    color: var(--iris-emerald);
+}
+
+/* Buttons */
+.btn-iris-primary {
+    background-color: var(--iris-blue);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 4px 14px rgba(0, 82, 204, 0.25);
+    transition: all 0.25s ease;
+}
+
+.btn-iris-primary:hover,
+.btn-iris-primary:focus {
+    background-color: var(--iris-blue-dark);
+    color: #FFFFFF;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(0, 82, 204, 0.35);
+}
+
+.btn-iris-outline {
+    background-color: #FFFFFF;
+    color: var(--iris-navy);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: 1px solid var(--iris-border);
+    transition: all 0.25s ease;
+}
+
+.btn-iris-outline:hover {
+    border-color: var(--iris-blue);
+    background-color: var(--iris-ice);
+    color: var(--iris-blue);
+    transform: translateY(-2px);
+}
+
+/* Institutional Top Ribbon */
+.top-ribbon-bar {
+    background-color: var(--iris-navy);
+    color: #CBD5E1;
+    font-size: 0.8125rem;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.top-ribbon-bar a {
+    color: #CBD5E1;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.top-ribbon-bar a:hover {
+    color: #FFFFFF;
+}
+
+/* Corporate Navbar */
+.navbar-iris {
+    background: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--iris-border);
+    padding: 14px 0;
+    transition: all 0.3s ease;
+}
+
+.navbar-iris.scrolled {
+    padding: 10px 0;
+    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.08);
+}
+
+.nav-link-iris {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--iris-text) !important;
+    padding: 8px 16px !important;
+    position: relative;
+    transition: color 0.25s;
+}
+
+.nav-link-iris:hover,
+.nav-link-iris.active {
+    color: var(--iris-blue) !important;
+}
+
+.nav-link-iris.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    right: 16px;
+    height: 2px;
+    background-color: var(--iris-blue);
+}
+
+/* Hero Section */
+.hero-iris-section {
+    background: linear-gradient(180deg, #FFFFFF 0%, var(--iris-bg) 100%);
+    padding: 80px 0 90px;
+    border-bottom: 1px solid var(--iris-border);
+}
+
+.hero-iris-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+    font-weight: 800;
+    line-height: 1.15;
+    color: var(--iris-navy);
+    margin-bottom: 20px;
+}
+
+.hero-iris-desc {
+    font-size: 1.125rem;
+    color: var(--iris-text);
+    line-height: 1.7;
+    margin-bottom: 36px;
+    max-width: 620px;
+}
+
+.hero-iris-frame {
+    position: relative;
+    border-radius: 18px;
+    background: #FFFFFF;
+    padding: 10px;
+    box-shadow: 0 12px 32px -4px rgba(15, 23, 42, 0.12);
+    border: 1px solid var(--iris-border);
+}
+
+.hero-iris-frame img {
+    border-radius: 12px;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.hero-iris-badge-overlay {
+    position: absolute;
+    bottom: -20px;
+    left: 24px;
+    right: 24px;
+    background: #FFFFFF;
+    border: 1px solid var(--iris-border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Institutional Metrics Bar */
+.metrics-strip {
+    background: #FFFFFF;
+    border: 1px solid var(--iris-border);
+    border-radius: 18px;
+    box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.08);
+    overflow: hidden;
+    margin-top: -36px;
+    position: relative;
+    z-index: 10;
+}
+
+.metric-col {
+    padding: 32px 24px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.25s;
+}
+
+.metric-col:hover {
+    background-color: var(--iris-ice);
+}
+
+.metric-col:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: var(--iris-border);
+}
+
+.metric-val {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--iris-navy);
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.metric-val span {
+    color: var(--iris-blue);
+}
+
+.metric-txt {
+    font-family: var(--font-heading);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--iris-muted);
+}
+
+/* Cards & Components */
+.card-iris {
+    background: #FFFFFF;
+    border: 1px solid var(--iris-border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-iris:hover {
+    border-color: var(--iris-ice-border);
+    transform: translateY(-5px);
+    box-shadow: 0 16px 36px -6px rgba(0, 82, 204, 0.12);
+}
+
+.icon-box-iris {
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+    background: var(--iris-ice);
+    border: 1px solid var(--iris-ice-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--iris-blue);
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.card-iris:hover .icon-box-iris {
+    background: var(--iris-blue);
+    color: #FFFFFF;
+}
+
+/* Tables for Schedules & Scope */
+.table-iris {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid var(--iris-border);
+    border-radius: 12px;
+    overflow: hidden;
+    background: #FFFFFF;
+}
+
+.table-iris thead th {
+    background-color: var(--iris-navy);
+    color: #FFFFFF;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 0.8125rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 16px 20px;
+    border: none;
+}
+
+.table-iris tbody td {
+    padding: 16px 20px;
+    border-top: 1px solid var(--iris-border);
+    font-size: 0.9375rem;
+    color: var(--iris-text);
+    vertical-align: middle;
+}
+
+.table-iris tbody tr:hover {
+    background-color: var(--iris-ice);
+}
+
+/* Client Marquee */
+.client-marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 12px 0;
+}
+
+.client-marquee-track {
+    display: inline-flex;
+    gap: 16px;
+    animation: clientScroll 40s linear infinite;
+}
+
+.client-marquee-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes clientScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.client-chip {
+    background: #FFFFFF;
+    border: 1px solid var(--iris-border);
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.875rem;
+    color: var(--iris-heading);
+    transition: all 0.2s;
+}
+
+.client-chip:hover {
+    border-color: var(--iris-blue);
+    background: var(--iris-ice);
+}
+
+.client-chip strong {
+    color: var(--iris-navy);
+}
+
+.client-chip span {
+    font-size: 0.75rem;
+    color: var(--iris-muted);
+}
+
+/* Institutional Footer */
+.footer-iris {
+    background-color: var(--iris-navy);
+    color: #94A3B8;
+    padding: 70px 0 30px;
+    border-top: 1px solid var(--iris-border);
+}
+
+.footer-iris h4 {
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer-iris ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-iris ul a {
+    color: #94A3B8;
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s;
+}
+
+.footer-iris ul a:hover {
+    color: #FFFFFF;
+}
+
+.footer-bottom-iris {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    margin-top: 48px;
+    font-size: 0.8125rem;
+}
+
+/* Floating WhatsApp Widget */
+.floating-wa-btn {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 1050;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: #25D366;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.floating-wa-btn:hover {
+    transform: scale(1.1);
+    color: #FFFFFF;
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.6);
+}
